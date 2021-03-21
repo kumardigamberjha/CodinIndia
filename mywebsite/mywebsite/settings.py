@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'taggit',
     'ckeditor',
     'ckeditor_uploader',
-    'widget_tweaks',
 
     # all auth
     'allauth',
@@ -199,4 +198,4 @@ MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
