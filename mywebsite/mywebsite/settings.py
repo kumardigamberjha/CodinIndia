@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+import django_heroku
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'taggit',
     'ckeditor',
     'ckeditor_uploader',
-
+    'widget_tweaks',
+    
     # all auth
     'allauth',
     'allauth.account',
