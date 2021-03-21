@@ -1,0 +1,638 @@
+
+.topbar-responsive {
+    background: #2c3840;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fefefe;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #2c3840;
+  }
+  
+  .topbar-responsive .menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .topbar-responsive .menu a {
+    color: #fefefe;
+    transition: color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu a:hover {
+    color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu a {
+      padding: 0.875rem 0;
+    }
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button {
+    color: #fefefe;
+    border-color: #fefefe;
+    border-radius: 5000px;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button:hover {
+    color: #c6d1d8;
+    border-color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu .topbar-responsive-button {
+      width: 100%;
+      margin: 0.875rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive {
+      padding: 0.75rem;
+    }
+    .topbar-responsive .top-bar-title {
+      position: relative;
+      width: 100%;
+    }
+    .topbar-responsive .top-bar-title span {
+      position: absolute;
+      right: 0;
+      border: 1px solid #fefefe;
+      border-radius: 5px;
+      padding: 0.25rem 0.45rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    .topbar-responsive .top-bar-title span .menu-icon {
+      margin-bottom: 4px;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive-links {
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-duration: 0.5s;
+              animation-duration: 0.5s;
+      width: 100%;
+      -webkit-animation: fadeIn 1s ease-in;
+              animation: fadeIn 1s ease-in;
+    }
+  }
+  
+.myheading{
+    text-align: center;
+    padding: 20px;
+}  
+
+
+.marketing-site-footer {
+    background: #2c3840;
+    color: #8aa0ae;
+    padding: 2rem 0 0;
+  }
+  
+  .marketing-site-footer .marketing-site-footer-menu-social a {
+    color: #fefefe;
+  }
+  
+  .marketing-site-footer .column-block {
+    margin-bottom: 30px;
+  }
+  
+  .marketing-site-footer > .row {
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .marketing-site-footer .columns {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .marketing-site-footer-name {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .marketing-site-footer-title {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .marketing-site-footer-block {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .marketing-site-footer-block .fa {
+    font-size: 2rem;
+    color: #020304;
+  }
+  
+  .marketing-site-footer-block p {
+    margin-left: 1rem;
+    line-height: 1.125rem;
+  }
+  
+  .marketing-site-footer-bottom {
+    background: #020304;
+    padding: 1rem 0;
+  }
+  
+  .marketing-site-footer-bottom p,
+  .marketing-site-footer-bottom .menu {
+    margin-bottom: 0;
+  }
+  
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+    color: #8aa0ae;
+  }
+  
+  @media screen and (max-width: 63.9375em) {
+    .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 63.9375em) {
+    .marketing-site-footer-bottom {
+      text-align: center;
+    }
+  }
+  
+  /* Team */
+
+
+  .four-up-feature {
+    text-align: center;
+  }
+  
+  .four-up-feature .four-up-feature-header {
+    margin-bottom: 3rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .four-up-feature .four-up-feature-image {
+    margin-bottom: 2rem;
+  }
+  
+  .four-up-feature .four-up-feature-text {
+    margin-bottom: 2rem;
+  }
+  
+.our-team img{
+    width: 250px;
+    height: 200px;
+}  
+
+.logoimg{
+    width: 30px;
+    height: 15px;
+}
+
+
+/* ##################### Signup page ######################## */
+
+
+.login-box {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+    background: #fefefe;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  .login-box .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: inline-block;
+    min-width: 2.1em;
+    padding: 0.3em;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    text-align: center;
+    font-size: 1.275rem;
+    background: #cacaca;
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .login-box .or {
+      top: 85%;
+    }
+  }
+  
+  .login-box-title {
+    font-weight: 300;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .login-box-form-section,
+  .login-box-social-section-inner {
+    padding: 2.5rem;
+  }
+  
+  .login-box-social-section {
+    background: url("https://images.pexels.com/photos/179124/pexels-photo-179124.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-box-input {
+    margin-bottom: 1.25rem;
+    height: 2rem;
+    border: 0;
+    padding-left: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #1779ba;
+    font-weight: 400;
+  }
+  
+  .login-box-input:focus {
+    color: #1779ba;
+    transition: 0.2s ease-in-out;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 2px solid #1779ba;
+  }
+  
+  .login-box-submit-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #1779ba;
+    color: #fefefe;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  
+  [data-whatinput='mouse'] .login-box-submit-button {
+    outline: 0;
+  }
+  
+  .login-box-submit-button:hover, .login-box-submit-button:focus {
+    background-color: #126195;
+    color: #fefefe;
+  }
+  
+  .login-box-submit-button:hover,
+  .login-box-submit-button:focus {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  }
+  
+  .login-box-submit-button:active {
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.4);
+  }
+  
+  .login-box-social-button-facebook {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3b5998;
+    color: #fefefe;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+  
+  [data-whatinput='mouse'] .login-box-social-button-facebook {
+    outline: 0;
+  }
+  
+  .login-box-social-button-facebook:hover, .login-box-social-button-facebook:focus {
+    background-color: #2f477a;
+    color: #fefefe;
+  }
+  
+  .login-box-social-button-twitter {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #55acee;
+    color: #fefefe;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+  
+  [data-whatinput='mouse'] .login-box-social-button-twitter {
+    outline: 0;
+  }
+  
+  .login-box-social-button-twitter:hover, .login-box-social-button-twitter:focus {
+    background-color: #1a8fe8;
+    color: #fefefe;
+  }
+  
+  .login-box-social-button-google {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #dd4b39;
+    color: #fefefe;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+  
+  [data-whatinput='mouse'] .login-box-social-button-google {
+    outline: 0;
+  }
+  
+  .login-box-social-button-google:hover, .login-box-social-button-google:focus {
+    background-color: #be3221;
+    color: #fefefe;
+  }
+  
+  [class*="login-box-social-button-"]:hover,
+  [class*="login-box-social-button-"]:focus {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  }
+  
+  .login-box-social-headline {
+    display: block;
+    margin-bottom: 2.5rem;
+    font-size: 1.875rem;
+    color: #fefefe;
+    text-align: center;
+  }
+  
+  /* LOGIN ################### */
+
+
+  .sign-in-form {
+    padding: 1rem 1.5em;
+    border-radius: .5rem;
+    background-color: #3d454f;
+  }
+  
+  .sign-in-form h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .sign-in-form label {
+    text-transform: uppercase;
+    color: #adadad;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .sign-in-form input {
+    color: white;
+  }
+  
+  .sign-in-form input:focus {
+    opacity: .8;
+  }
+  
+  .sign-in-form-username,
+  .sign-in-form-password {
+    border-radius: 30px;
+    border: none;
+    opacity: .1;
+    transition: all ease .4s;
+  }
+  
+  .sign-in-form-button {
+    border-radius: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 1rem;
+    transition: all ease .4s;
+  }
+  
+  .sign-in-form-button:hover {
+    background-color: #44c8ed;
+    border-color: #44c8ed;
+  }
+  
+  /* Blog page design */
+  .blogimg{
+    width: 300px;
+    height: 250px;
+  }
+
+  /* read blogs design */
+  
+.simple-article-header {
+  background: #fefefe;
+  padding: 1.3rem 2rem .7rem;
+  border: 1px solid #cacaca;
+  margin-bottom: 1rem;
+}
+
+.simple-article-header .article-date-read {
+  color: #8a8a8a;
+}
+
+.simple-article-header .article-title {
+  text-transform: uppercase;
+}
+
+.simple-article-header .article-title a {
+  color: #0a0a0a;
+}
+
+.simple-article-header .article-title a:hover, .simple-article-header .article-title a:focus {
+  color: #1779ba;
+}
+
+.simple-article-header .article-author-comments a.article-comments {
+  color: #8a8a8a;
+}
+
+.simple-article-header .article-author-comments a.article-comments:hover, .simple-article-header .article-author-comments a.article-comments:focus {
+  color: #1779ba;
+}
+
+.simple-article-header .article-date-read,
+.simple-article-header .article-title,
+.simple-article-header .article-author-comments,
+.simple-article-header .article-social,
+.simple-article-header .article-post-image,
+.simple-article-header .article-post-content {
+  margin-bottom: 0.25rem;
+}
+
+.simple-article-header .article-social {
+  margin-top: 0.75rem;
+}
+
+.simple-article-header .article-social .social {
+  margin-right: 0.25rem;
+}
+
+.simple-article-header .article-social .social.facebook {
+  background-color: #3b5998;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.facebook:hover, .simple-article-header .article-social .social.facebook:focus {
+  background-color: #2f477a;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.twitter {
+  background-color: #55acee;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.twitter:hover, .simple-article-header .article-social .social.twitter:focus {
+  background-color: #1a8fe8;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.linkedin {
+  background-color: #007bb5;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.linkedin:hover, .simple-article-header .article-social .social.linkedin:focus {
+  background-color: #006291;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.google-plus {
+  background-color: #dd4b39;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social.google-plus:hover, .simple-article-header .article-social .social.google-plus:focus {
+  background-color: #be3221;
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social > .fa {
+  color: #fefefe;
+}
+
+.simple-article-header .article-social .social > .fa.fa-comments-o {
+  margin-right: 0.25rem;
+}

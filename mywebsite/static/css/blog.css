@@ -1,0 +1,44 @@
+nav a{
+    text-decoration: none;
+}
+.myheadings{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background-color: blue;
+    border-radius: 50px;
+    margin-bottom: 30px;
+  }
+  .myheadings:hover{
+      color: white;
+      background-color: blue;
+  }
+  .myblogimg{
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  .readmore{
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+    margin: 15px 10px;
+    padding: 10px 110px; 
+    border-radius: 33px;
+  }
+  .readmore:hover{
+      color: white;
+      background-color: blue;
+  }
+  .readmores{
+      padding: 10px 30px;
+      color: blue;
+      background-color: white;
+      border-radius: 33px;
+      border-color: blue;
+  }
+  .readmores:hover{
+    color: white;
+    background-color: blue;
+}

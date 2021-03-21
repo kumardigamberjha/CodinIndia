@@ -1,0 +1,51 @@
+{% extends 'website/index.html'%}
+
+{% load widget_tweaks %}
+
+
+{% block content %}
+
+<div class="login-box">
+    <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+            <div class="login-box-form-section">
+                <h1 class="login-box-title">Sign up</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% render_field form.first_name class="login-box-input" placeholder="First Name" %}
+
+                    {% render_field form.last_name class="login-box-input" placeholder="Last Name" %}
+                    {% render_field form.username class="login-box-input" placeholder="Username" %}
+                    {% render_field form.email class="login-box-input" placeholder="Email" %}
+                    {% render_field form.password1 class="login-box-input" placeholder="Password" %}
+                    {% render_field form.password2 class="login-box-input" placeholder=" Confirm Password" %}
+
+
+                    <!-- {% for i in form %}
+                    {% render_field i class="login-box-input" %}
+                    {% endfor %}  -->
+
+                    <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+                    {{form.errors}}
+            </div>
+            </form>
+            <div class="or">OR</div>
+        </div>
+        <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+            <div class="login-box-social-section-inner">
+                <span class="login-box-social-headline">Sign in with<br />your social network</span>
+                <!-- <a class="login-box-social-button-facebook" href="{% provider_login_url " facebook" method="js_sdk"
+                    %}">Facebook Login</a> -->
+               
+                    {% load socialaccount %}
+                <a class="login-box-social-button-facebook" href="{% provider_login_url "facebook" method="oauth2" %}">Facebook Signup  </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+{% endblock content %}
+
+
+{% block team %}
+{% endblock team %}

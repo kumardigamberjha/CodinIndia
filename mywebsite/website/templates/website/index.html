@@ -1,0 +1,245 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}
+    <title>Codin India - Home Page</title>
+    {% endblock title %}
+
+
+    {% block css %}
+    <!-- foundation -->
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- main file -->
+    <link rel="stylesheet" href="../../../static/css/main.css">
+    {% endblock css %}
+
+
+  </head>
+  <body>
+
+    {% block nav %}
+
+    <nav class="top-bar topbar-responsive">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+        </span>
+        <a class="topbar-responsive-logo" href="/"><h2>Codin India</h2></a>
+      </div>
+      <div id="topbar-responsive" class="topbar-responsive-links">
+        <div class="top-bar-right">
+          <ul class="menu simple vertical medium-horizontal">
+            <li><a href="/">Home</a></li>
+            <li><a href="{% url 'blog' %}">Blogs</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li><a href="https://www.youtube.com/channel/UCa9umeRS8bWgPy7XJ1j3WUw/playlists">Youtube</a></li>
+            <li><a href="{% url 'signup'%}">Sign Up</a></li>
+            <!-- <li><a href="{% url 'login'%}">Login</a></li> -->
+            <li>
+                {% if request.user.is_authenticated %}
+                   <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                   <a href="{% url 'login' %}">Login</a>
+                {% endif %}
+            </li>
+            <!-- <li>
+              <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock nav %}
+    
+    
+    <!-- nav end -->
+    
+    
+
+    <!-- content -->
+    {% block content %}
+    
+    <div class="callout large">
+      <div class="row column text-center">
+        <h1>Start Your Data Science Career With Us</h1>
+        <p class="lead">Learn Data Science with Python for free. We provide Free Books of Data Science every Sunday.</p>
+        <a href="{% url 'blog' %}" class="button large">Our Blogs</a>
+        <a href="#" class="button large hollow">source-code</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-6 columns medium-push-6">
+        <img class="thumbnail" src="../../../static/images/digitalindia.jpg">
+      </div>
+      <div class="medium-6 columns medium-pull-6">
+        <h2>About Codin India</h2>
+        <p>At <strong>Codin India</strong>, we have a great team of smart and hard-working members. Codin India was <em>est.</em> in <em>2020</em>. We are focused to provide better and quality Education to our youth. You can learn Data Science with Python. We are experts in Python. We have a aim to provide IT services and Education to our youth to make India more aware about <strong>Digitalization</strong>.</p>
+        <strong>Aim:-</strong><q>India towards Digitalization</q>
+      </div>
+    </div>
+    <h1 class="myheading">OUR SERVICES</h1>
+    <hr>
+
+    <div class="row">
+      <div class="medium-4 columns">
+        <h3>Data Science</h3>
+        <p>Learn Data Science with Python in Hindi with notes - <em>Codin India</em>. Learn Basics of Python, Numpy, Pandas, matplotlib and many more...</p>
+      </div>
+      <div class="medium-4 columns">
+        <h3>Full Stack Development</h3>
+        <p>We provide Full Stack Web Development tutorial for beginners in hindi. We will learn HTML, CSS, JavaScript, Django and many more languages and Databases.</p>
+      </div>
+      <div class="medium-4 columns">
+        <h3>Free Books and Blogs</h3>
+        <p>We provide Free Books on Every Weekend and Blogs on Programming Every Day. We provide source code of the video tutorial provided in the youtube tutorial.</p>
+      </div>
+    </div>
+    <hr>
+    {% endblock content %}
+
+  
+
+    {% block team %}
+    <section class="four-up-feature">
+      <div class="row four-up-feature-header align-center">
+        <div class="medium-8 columns">
+          <h2>Our Great Team</h2>
+          <h5>Codin India has a great team and all are highly Educated and Skilled Programmer</h5>
+        </div>
+      </div>
+      <div class="row align-spaced our-team">
+        <div class="small-10 medium-3 columns">
+          <img class="four-up-feature-image" src="../../../static/images/digamber.jpg" alt="icon">
+          <h4>Digamber Jha</h4>
+          <p class="four-up-feature-text">Digamber Jha is Data Scientist and Youtube mentor</p>
+        </div>
+        <div class="small-10 medium-3 columns">
+          <img class="four-up-feature-image" src="https://placehold.it/75" alt="icon">
+          <h4>Akshat Gupta</h4>
+          <p class="four-up-feature-text"> Akshat Gupta is Full Stack Web Developer and Content writter. </p>
+        </div>
+        <div class="small-10 medium-3 columns">
+          <img class="four-up-feature-image" src="https://placehold.it/75" alt="icon">
+          <h4>Deepak Kumar</h4>
+          <p class="four-up-feature-text">Deepak is Web Developer and Content creator.</p>
+        </div>
+        <div class="small-10 medium-3 columns">
+          <img class="four-up-feature-image" src="../../../static/images/babbu.jpg" alt="icon">
+          <h4>Kanwal Sagoo</h4>
+          <p class="four-up-feature-text">Kanwal Sagoo is Front End Developer and a programmer</p>
+        </div>
+      </div>
+    </section>
+
+    {% endblock team %}
+    
+    
+<!-- Footer -->
+
+
+    {% block footer %}
+
+    <footer class="marketing-site-footer">
+      <div class="row medium-unstack">
+        <div class="medium-4 columns">
+          <h4 class="marketing-site-footer-name">Codin India</h4>
+          <p>At <strong>Codin India</strong>, we have a great team of smart and hard-working members. Codin India was <em>est.</em> in <em>2020</em>. We are focused to provide better and quality Education to our youth. You can learn Data Science with Python.</p>
+          <ul class="menu marketing-site-footer-menu-social simple">
+            <li><a href="https://www.youtube.com/channel/UCa9umeRS8bWgPy7XJ1j3WUw/playlists"><i class="fab fa-youtube" ></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+
+          </ul>
+        </div>
+        <div class="medium-4 columns">
+           <h4 class="marketing-site-footer-title">Contact Info</h4>
+          <div class="marketing-site-footer-block">
+            <!-- <i class="fab fa-map-marker" aria-hidden="true"></i> -->
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Codin India<br>Jalandhar</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <p>7814574759</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>codinindia@gmail.com</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <h4 class="marketing-site-footer-title">Social Media</h4>
+          <div class="row small-up-3">
+            <div class="column column-block">
+              <img src="../../../static/images/fb.png" class="logoimg" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="../../../static/images/linkdin.png" class="logoimg" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="../../../static/images/insta.png" class="logoimg" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="../../../static/images/twitter.png" class="logoimg" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="../../../static/images/youtube png.png" class="logoimg" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="../../../static/images/google.png" class="logoimg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-site-footer-bottom">
+        <div class="row large-unstack align-middle">
+          <div class="column">
+            <p>&copy; 2021 All rights reserved</p>
+          </div>
+          <div class="column">
+            <ul class="menu marketing-site-footer-bottom-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock footer %}
+
+    
+    
+    
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+      var prev = 0;
+var $window = $(window);
+var nav = $('.scrollhide-nav');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('hidden', scrollTop > prev);
+  prev = scrollTop;
+});
+
+
+
+
+    </script>
+  </body>
+</html>
+
+
+

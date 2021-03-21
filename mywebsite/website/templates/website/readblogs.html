@@ -1,0 +1,53 @@
+{% extends 'website/index.html'%}
+
+{% load widget_tweaks %}
+
+{% block content %}
+
+
+<div class="simple-article-header">
+    <!-- Article Published Date & Reading Time -->
+    <p class="article-date-read">Published on: 21 April, 2017 - 3 min read</p>
+    
+    <!-- Article Title -->
+    <h4 class="article-title">
+      <a href="#">
+        {{blogs.title}}
+      </a>
+    </h4>
+  
+    <!-- Article Author Name & Comment Hyperlink -->
+    <p class="article-author-comments">
+      <em>by <a href="/">{{blogs.author}}</a></em> -
+      <a class="article-comments" href="#">3 Comments</a>
+    </p>
+  
+    <!-- Article Social Links -->
+    <div class="article-social">
+      <a href="#" class="button social facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="button social twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="button social linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="button social google-plus">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  
+    <!-- Article Image -->
+    
+  
+    <!-- Article Post Content -->
+    <div class="article-post-content">
+      <p>{{blogs.texteditor|safe}}</p>
+    </div>
+  </div>
+{% endblock content %}
+  
+{% block team %}
+{% endblock team %}
+  

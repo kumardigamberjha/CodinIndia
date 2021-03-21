@@ -1,0 +1,44 @@
+{% extends 'website/index.html'%}
+
+{% load widget_tweaks %}
+
+{% block content %}
+
+<div class="login-box">
+    <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+            <div class="login-box-form-section">
+                <h1 class="login-box-title">Login</h1>
+                <form action="" method="post">
+                    {% csrf_token %}                
+                <!-- <span class="login-box-input">{% render_field form.username class="login-box-input" placeholder="Username" name="username" %}</span> -->
+                <input type="text" name="username" class="login-box-input" placeholder="Username">
+                <input type="password" name="password" class="login-box-input" placeholder="Password">
+
+                <input class="login-box-submit-button" type="submit" name="signup_submit" value="Log me in" />
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {%endfor %}
+                {{form.errors}}
+            </div>
+        </form>
+            <div class="or">OR</div>
+        </div>
+        <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+            <div class="login-box-social-section-inner">
+                <span class="login-box-social-headline">Sign in with<br />your social network</span>
+                <a class="login-box-social-button-facebook">Log in with facebook</a>
+                <a class="login-box-social-button-twitter">Log in with Twitter</a>
+                <a class="login-box-social-button-google">Log in with Google+</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+  
+  {% endblock content %}
+
+  
+{% block team %}
+{% endblock team %}
+
