@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-import django_heroku
+# import django_heroku
 # Application definition
 
 INSTALLED_APPS = [
@@ -199,4 +199,4 @@ MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
